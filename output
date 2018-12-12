@@ -1,0 +1,28 @@
+nohup: ignoring input
+before / Route
+Connected
+(node:9389) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+/ Route
+Session {
+  cookie: 
+   { path: '/',
+     _expires: 2019-01-11T05:23:09.115Z,
+     originalMaxAge: 2628000000,
+     httpOnly: true },
+  user: '5c096a86766d2319205d5db2',
+  username: 'kamo743',
+  msg: 'Authenticated as kamo743',
+  color: 'Blue' }
+/ Route if user
+[0mGET / [36m304 [0m14.944 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m6.171 ms - -[0m
+[0mGET /javascripts/my_app.js [36m304 [0m3.081 ms - -[0m
+[0mGET /images/meme%20(1).jpeg [32m200 [0m8.696 ms - 25629[0m
+[0mGET /images/meme%20(1).png [32m200 [0m1.555 ms - 23170[0m
+[0mGET /images/meme%20(3).jpg [36m304 [0m0.893 ms - -[0m
+[0mGET /images/meme%20(2).png [36m304 [0m9.135 ms - -[0m
+[0mGET /images/meme%20(1).jpg [32m200 [0m8.475 ms - 73126[0m
+[0mGET /images/photo-1521449256184-170b4a4c437c.jpg [36m304 [0m0.984 ms - -[0m
+[0mGET /images/meme%20(2).jpg [32m200 [0m2.220 ms - 253931[0m
+[0mGET /user/profile [32m200 [0m18.151 ms - 176[0m
+[0mGET /favicon.ico [33m404 [0m1.452 ms - 199[0m

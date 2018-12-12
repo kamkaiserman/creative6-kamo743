@@ -1,0 +1,49 @@
+<!doctype html>
+<html ng-app="myApp">
+
+<head>
+    <title>User Login and Sessions</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Parisienne" rel="stylesheet">
+</head>
+
+<body>
+    <div ng-controller="myController">
+        <h2 id="welcomeText">Welcome to Heaven. You are Logged In as
+            <%= username %>
+        </h2>
+        <a id="logoutLink" href="/logout">logout</a>
+        <a id="editLink" href="/user">Edit User</a>
+        <p>Place Your Code Here
+            <p>
+    </div>
+    <hr>
+    <div>
+        <span id="indexMsg">
+        <%= msg %>
+    </span>
+    </div>
+    <hr>
+    <div>
+        <span id="colorText">
+    In Heaven, we know what your favorite color is. Your favorite color is:
+        <%= color %>
+        </span>
+    </div>
+    <br>
+    <div>
+        <h1>Heavenly Memes</h1>
+        <img src="/images/meme (1).jpeg">
+        <img src="/images/meme (1).jpg">
+        <img src="/images/meme (1).png">
+        <img src="/images/meme (2).jpg">
+        <img src="/images/meme (3).jpg">
+        <img src="/images/meme (2).png">
+    </div>
+
+    <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
+    <script src="/javascripts/my_app.js"></script>
+
+</body>
+
+</html>

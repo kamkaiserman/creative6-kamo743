@@ -1,0 +1,7 @@
+
+> auth@0.0.0 start /home/ec2-user/environment/lab-6-authentication-kamo743
+> node ./bin/www
+
+before / Route
+Connected
+(node:9231) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.

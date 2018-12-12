@@ -1,0 +1,74 @@
+body {
+  padding: 50px;
+  background-image: url("/images/photo-1521449256184-170b4a4c437c.jpg");
+  background-size: cover;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  background-color: #CC6477;
+  border-radius: 5px;
+}
+
+a:hover {
+  background-color: #14B7FF;
+}
+
+.form-header {
+  color: #031C26;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+p {
+  font-family: Arial;
+}
+
+label {
+  color: #031C26;
+}
+
+img {
+  width: 500px;
+  height: auto;
+  text-align: center;
+  padding: 30px;
+}
+
+input[type=text],
+input[type=password],
+input[type=email],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #CC6477;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #14B7FF;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #FFFDE2;
+  padding: 20px;
+  box-shadow: 0px 30px 30px #B2969B;
+}
