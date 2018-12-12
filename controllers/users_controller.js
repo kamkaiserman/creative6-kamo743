@@ -68,7 +68,9 @@ exports.updateUser = function(req, res){
   User.findOne({ _id: req.session.user })
   .exec(function(err, user) {
     user.set('email', req.body.email);
-    user.set('color', req.body.color);
+    user.set('puppy', req.body.color);
+    user.set('img', req.body.color);
+    user.set('mission', req.body.color);
     user.save(function(err) {
       if (err){
         res.sessor.error = err;

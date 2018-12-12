@@ -1,34 +1,40 @@
 <!doctype html>
 <html>
-    
+
 <head>
-    <title>User Login and Sessions</title>
+    <title>Walfmart</title>
     <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
     <link href="https://fonts.googleapis.com/css?family=Parisienne" rel="stylesheet">
 </head>
-        
-<body>  
+
+<body>
+
     <div class="form-container">
-        <p class="form-header">Welcome to Heaven: Please Log In</p>
-        <form method="POST" action="/login">
-            <label>Username:</label>
-            <input type="text" id="username" name="username"><br>
-            <label>Password:</label>
-            <input type="password" id="password" name="password"><br>
-            <input type="submit" id="login" value="Login to Heaven">
+        <p class="form-header">DATABASE SECURE... ENTER CREDENTIALS</p>
+        <br>
+        <form method="POST" action="/login" autocomplete="off">
+            <label>SECRET CODENAME:</label> 
+            <input type="text" id="username" username="username">
+            <label>SECRET PASSWORD:</label>
+            <input type="text" id="password" password="password"><br>
+            <br>
+            <br>
+            <input type="submit" id="login" value="LOG IN AND WELCOME AND JOIN US">
         </form>
     </div>
     <br>
     <div>
-    <a id="signUpLink" href="/signup">Sign Up</a>
+        <a id="signUpLink" href="/signup">DON'T HAVE A LOGIN? CLICK HERE TO SIGN UP FOR THE SECRET GOVERNMENT</a>
     </div>
     <br>
     <div>
-    <span id="loginMsg">
+        <span id="loginMsg">
     <%= msg %>
     </span>
     </div>
-    
+
 </body>
-        
+
+
+
 </html>

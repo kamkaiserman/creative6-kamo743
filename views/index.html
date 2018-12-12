@@ -2,44 +2,47 @@
 <html ng-app="myApp">
 
 <head>
-    <title>User Login and Sessions</title>
+    <title>Walfmart</title>
     <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
     <link href="https://fonts.googleapis.com/css?family=Parisienne" rel="stylesheet">
 </head>
 
-<body>
+<body ng-model="User">
     <div ng-controller="myController">
-        <h2 id="welcomeText">Welcome to Heaven. You are Logged In as
-            <%= username %>
-        </h2>
-        <a id="logoutLink" href="/logout">logout</a>
-        <a id="editLink" href="/user">Edit User</a>
-        <p>Place Your Code Here
-            <p>
-    </div>
-    <hr>
-    <div>
-        <span id="indexMsg">
-        <%= msg %>
-    </span>
+        <h3>Spy Profile</h3>
+        <img src={{user.img}} alt="SIDE QUEST: EDIT SPY INFO AND CREATE A PROFILE PIC TO SHOW OFF YOUR SWEET SWEET BOD" style="width:10%;height:auto;">
+        <p>Codename: {{user.username}}</p> 
+        <p>Fav Pupper: {{user.puppy}}</p> 
+        <p>Current Mission: {{user.mission}}</p>
+        <br><br>
+        <div ng-controller="myController">
+            <a id="editLink" href="/user">Edit Spy Info</a>
+        </div>
+        <br>
     </div>
     <hr>
     <div>
         <span id="colorText">
-    In Heaven, we know what your favorite color is. Your favorite color is:
-        <%= color %>
+    Remember: we know your favorite puppy so we know how to take you down if you ever decide to take us down.</p>
         </span>
     </div>
+    <hr>
+    <div>
+        <h1>Send Secret Messages TO YOURSELF!</h1>
+        <p>Write a secret message to yourself and when you press submit, your message disapears forever. <br>The perfect spy tool.</p>
+        <form action="myform.cgi">
+            <input type="text">
+            <label></label>
+            <br>
+            <input type="reset" value="SEND SECRET MESSAGE TO YOUR MIND">
+        </form>
+    </div>
+    <hr>
     <br>
     <div>
-        <h1>Heavenly Memes</h1>
-        <img src="/images/meme (1).jpeg">
-        <img src="/images/meme (1).jpg">
-        <img src="/images/meme (1).png">
-        <img src="/images/meme (2).jpg">
-        <img src="/images/meme (3).jpg">
-        <img src="/images/meme (2).png">
+        <a id="logoutLink" href="/logout">SIGN OFF FOR THE DAY. YOU DESERVE IT!</a>
     </div>
+    <br><br>
 
     <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
     <script src="/javascripts/my_app.js"></script>
